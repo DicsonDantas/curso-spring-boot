@@ -15,7 +15,7 @@ public class CategoriaService {
 	
 	
 	
-	public Categoria LoadById(Integer id) {
+	public Categoria loadById(Integer id) {
 		Categoria obj = repo.findOne(id);
 		if(obj==null) {
 			throw new ObjectNotFoundException("Objeto não encontrado, ID : " + id + ", Tipo : " + Categoria.class.getName());
